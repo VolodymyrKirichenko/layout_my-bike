@@ -1,0 +1,48 @@
+.card {
+  display: block;
+  background-color: #1d1d1d;
+
+  grid-row: 1;
+
+  max-width: 324px;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include onTablet {
+    display: block;
+  }
+
+  &__images {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 auto 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}
+
+.grid__cards {
+  display: block;
+
+  @include onDesktop {
+    display: grid;
+  }
+}

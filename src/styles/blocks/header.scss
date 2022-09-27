@@ -1,0 +1,104 @@
+.header {
+  background-image: url(../images/photos/header.jpg);
+  background-size: cover;
+  background-position: right;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+
+    margin-bottom: 60px;
+    padding: 29px 20px 88px;
+
+    @include onTablet {
+      margin-bottom: 120px;
+      padding: 34px 72px 130px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 120px;
+      padding: 36px 120px 203px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 66px;
+  }
+
+  &__phone {
+    text-decoration: none;
+    background-image: url(../images/photos/phone.svg);
+
+    @include onTablet {
+      &::before {
+        content: "+1 234 5555-55-55";
+        position: relative;
+        top: 50%;
+
+        transform: translate(-100%, -50%);
+        transition-duration: 0.3s;
+
+        display: block;
+        width: max-content;
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 1.5px;
+        color: $color-white;
+
+        opacity: 0;
+        pointer-events: none;
+
+        transition: opacity 0.3s;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__burger-menu {
+    background-image: url(../images/photos/burger.svg);
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-image: url(../images/photos/burger-hover.svg);
+    }
+  }
+
+  &__title {
+    font-family: 'Poppins';
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+
+    letter-spacing: -1.5px;
+
+    color: $color-white;
+
+    @include onTablet {
+      font-size: 64px;
+    }
+
+    @include onDesktop {
+      font-size: 80px;
+    }
+  }
+}
