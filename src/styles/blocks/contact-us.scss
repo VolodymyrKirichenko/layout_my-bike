@@ -38,7 +38,8 @@
     transition: border-color 0.3s;
 
     &:hover {
-      color: grey;
+      color: #fff;
+      text-shadow: 0 0 10px #fff;
     }
 
     @include link-after-hover($color-white)
