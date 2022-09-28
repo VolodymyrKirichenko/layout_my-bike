@@ -1,7 +1,7 @@
 .menu {
   width: 100%;
 
-  overflow:auto;
+  overflow: auto;
 
   background-color: #c2c2c2;
 
@@ -62,13 +62,13 @@
     transition-duration: 0.3s;
 
     color: #1d1d1d;
-    transition: 0.3s;
 
     @include onDesktop {
       font-weight: 700;
     }
 
-      @include link-after-hover($color-black)
+    @include link-after-hover($color-black);
+
   }
 
   &__phone-number {
@@ -90,7 +90,8 @@
       font-weight: 700;
     }
 
-    @include link-after-hover($color-black)
+    @include link-after-hover($color-black);
+
   }
 
   &__click {

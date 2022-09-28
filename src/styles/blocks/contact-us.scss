@@ -42,7 +42,7 @@
       text-shadow: 0 0 10px #fff;
     }
 
-    @include link-after-hover($color-white)
+    @include link-after-hover($color-white);
   }
 
   &__button {

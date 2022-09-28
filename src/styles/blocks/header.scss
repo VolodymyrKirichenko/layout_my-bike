@@ -65,8 +65,6 @@
 
         opacity: 0;
         pointer-events: none;
-
-        transition: opacity 0.3s;
       }
 
       &:hover::before {
@@ -86,7 +84,7 @@
   }
 
   &__title {
-    font-family: 'Poppins';
+    font-family: Poppins, sans-serif;
     margin: 0 auto;
 
     font-weight: 700;
