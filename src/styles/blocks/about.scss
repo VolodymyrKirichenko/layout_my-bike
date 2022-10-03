@@ -2,9 +2,7 @@
   &__title {
     margin: 0 0 32px;
 
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 100%;
+    @extend %t-poppins-32-medium;
 
     letter-spacing: -1.5px;
 
@@ -22,11 +20,9 @@
   }
 
   &__text {
-    display: block;
-
     font-weight: 500;
     font-size: 23px;
-    line-height: 140%;
+    line-height: 32.2px;
 
     color: $color-white;
 

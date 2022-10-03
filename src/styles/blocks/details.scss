@@ -1,11 +1,8 @@
 .details {
   &__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 32px;
+    @extend %t-poppins-32-medium;
 
     text-align: center;
-    letter-spacing: -1.5px;
     text-transform: capitalize;
 
     @include onTablet {

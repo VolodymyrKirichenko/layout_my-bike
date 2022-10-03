@@ -1,13 +1,15 @@
 .contact-us {
   &__title {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 100%;
+    @extend %t-poppins-32-medium;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 48px;
+    }
 
     margin-bottom: 48px;
 
     text-align: center;
-    letter-spacing: -1.5px;
   }
 
   &__field {
@@ -28,7 +30,7 @@
     font-size: 14px;
     line-height: 27px;
 
-    color: #fff;
+    color: $color-white;
   }
 
   &__info-link {
@@ -38,8 +40,8 @@
     transition: border-color 0.3s;
 
     &:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #fff;
+      color: $color-white;
+      text-shadow: 0 0 10px $color-white;
     }
 
     @include link-after-hover($color-white);

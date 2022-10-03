@@ -3,14 +3,15 @@
 
   overflow: auto;
 
-  background-color: #c2c2c2;
+  background-color: $color-menu;
 
   &__container {
     max-width: 1260px;
     width: 100%;
-    margin: 0 auto;
 
     height: 100vh;
+
+    margin: 0 auto;
     padding: 29px 20px 20px;
 
     @include onTablet {
@@ -35,10 +36,10 @@
   }
 
   &__list {
+    max-width: 1020px;
+
     margin-bottom: 40px;
     padding: 0;
-
-    max-width: 1020px;
 
     list-style: none;
   }
@@ -61,7 +62,7 @@
     text-decoration: none;
     transition-duration: 0.3s;
 
-    color: #1d1d1d;
+    color: $color-dark-black;
 
     @include onDesktop {
       font-weight: 700;
@@ -79,7 +80,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 27px;
-    color: #1d1d1d;
+    color: $color-dark-black;
 
     margin-bottom: 16px;
 
@@ -103,11 +104,11 @@
     line-height: 16px;
     letter-spacing: 2px;
 
-    color: #1d1d1d;
+    color: $color-dark-black;
 
     text-decoration: none;
     text-transform: uppercase;
-    border-bottom: 1px solid #1d1d1d;
+    border-bottom: 1px solid $color-dark-black;
 
     @include onDesktop {
       font-weight: 700;

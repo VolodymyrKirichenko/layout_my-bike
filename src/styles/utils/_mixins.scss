@@ -20,8 +20,10 @@
     right: 0;
 
     content: "";
+
     display: block;
-    height: 1px;
+
+    height: 2px;
     border-radius: 8px;
 
     background-color: #{$color};

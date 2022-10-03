@@ -1,6 +1,6 @@
 .card {
   display: block;
-  background-color: #1d1d1d;
+  background-color: $color-dark-black;
 
   grid-row: 1;
 
@@ -14,7 +14,7 @@
   border-radius: 10px;
   box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
 
-  transition: 0.3s;
+  transition-duration: 0.3s;
 
   &:hover {
     transform: scale(1.1);
@@ -31,13 +31,14 @@
 
   &__title {
     margin: 0 auto 8px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 140%;
+
+    @extend %t-poppins-24-bold;
   }
 
   &__text {
     margin-bottom: 16px;
+
+    @extend %t-poppins-16-normal;
   }
 }
 

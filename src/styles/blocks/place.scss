@@ -1,19 +1,22 @@
 .place {
   &__photo-container {
     position: relative;
-    width: 100%;
-    max-height: 256px;
+
     overflow: hidden;
 
+    max-height: 256px;
+    width: 100%;
     border-radius: 8px;
 
     &::after {
       content: "";
+
       display: block;
+
       padding-bottom: 100%;
     }
 
-    transition: 0.3s;
+    transition-duration: 0.3s;
 
     &:hover {
       transform: scale(1.05);
@@ -36,13 +39,13 @@
 
   &__title {
     margin: 0 auto 8px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 140%;
+
+    @extend %t-poppins-24-bold;
   }
 
   &__text {
     margin-bottom: 40px;
+    @extend %t-poppins-16-normal;
 
     @include onTablet {
       margin-bottom: 48px;

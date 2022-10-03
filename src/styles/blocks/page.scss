@@ -3,10 +3,11 @@
   font-weight: 400;
   font-size: 16px;
   color: $color-white;
+
   scroll-behavior: smooth;
 
   &__body {
-    background-color: #1d1d1d;
+    background-color: $color-dark-black;
 
     &--with-menu {
       overflow: hidden;
@@ -27,6 +28,10 @@
     &:target {
       transform: translateX(0);
     }
+  }
+
+  &__section {
+    scroll-margin-block-start: 50px;
   }
 
   &__main {
