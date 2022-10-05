@@ -1,10 +1,10 @@
 .about {
   &__title {
-    margin: 0 0 32px;
-
     @extend %t-poppins-32-medium;
 
-    letter-spacing: -1.5px;
+    margin: 0 0 32px;
+
+    letter-spacing: $spacing;
 
     color: $color-white;
 
@@ -22,7 +22,7 @@
   &__text {
     font-weight: 500;
     font-size: 23px;
-    line-height: 32.2px;
+    line-height: 32px;
 
     color: $color-white;
 

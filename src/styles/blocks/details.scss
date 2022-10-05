@@ -5,6 +5,8 @@
     text-align: center;
     text-transform: capitalize;
 
+    letter-spacing: $spacing;
+
     @include onTablet {
       font-size: 48px;
       line-height: 100%;

@@ -6,6 +6,7 @@
 
     max-height: 256px;
     width: 100%;
+
     border-radius: 8px;
 
     &::after {
@@ -16,7 +17,7 @@
       padding-bottom: 100%;
     }
 
-    transition-duration: 0.3s;
+    transition: transform 0.3s;
 
     &:hover {
       transform: scale(1.05);
@@ -38,14 +39,15 @@
   }
 
   &__title {
-    margin: 0 auto 8px;
-
     @extend %t-poppins-24-bold;
+
+    margin: 0 auto 8px;
   }
 
   &__text {
-    margin-bottom: 40px;
     @extend %t-poppins-16-normal;
+
+    margin-bottom: 40px;
 
     @include onTablet {
       margin-bottom: 48px;

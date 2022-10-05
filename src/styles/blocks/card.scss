@@ -1,6 +1,5 @@
 .card {
   display: block;
-  background-color: $color-dark-black;
 
   grid-row: 1;
 
@@ -12,6 +11,7 @@
 
   border: 1px solid transparent;
   border-radius: 10px;
+  background-color: $color-dark-black;
   box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
 
   transition-duration: 0.3s;
@@ -30,15 +30,15 @@
   }
 
   &__title {
-    margin: 0 auto 8px;
-
     @extend %t-poppins-24-bold;
+
+    margin: 0 auto 8px;
   }
 
   &__text {
-    margin-bottom: 16px;
-
     @extend %t-poppins-16-normal;
+
+    margin-bottom: 16px;
   }
 }
 
