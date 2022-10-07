@@ -2,16 +2,16 @@
   &__title {
     @extend %t-poppins-32-medium;
 
-    @include onTablet {
-      font-size: 48px;
-      line-height: 48px;
-    }
-
     margin-bottom: 48px;
 
     text-align: center;
 
     letter-spacing: $spacing;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 48px;
+    }
   }
 
   &__field {
@@ -46,7 +46,7 @@
       text-shadow: 0 0 10px $color-white;
     }
 
-    @include link-after-hover($color-white);
+    @include line-after-hover($color-white);
   }
 
   &__button {

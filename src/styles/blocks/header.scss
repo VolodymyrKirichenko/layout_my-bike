@@ -8,10 +8,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 100vh;
-
     margin-bottom: 60px;
     padding: 29px 20px 88px;
+
+    height: 100vh;
 
     @include onTablet {
       margin-bottom: 120px;
@@ -28,10 +28,10 @@
     display: flex;
     justify-content: space-between;
 
+    margin: 0 auto;
+
     max-width: 1020px;
     width: 100%;
-
-    margin: 0 auto;
   }
 
   &__nav-menu {
@@ -58,7 +58,6 @@
         display: block;
 
         padding-right: 20px;
-
         width: max-content;
 
         font-weight: 600;
@@ -81,7 +80,7 @@
 
   &__burger-menu {
     background-image: url(../images/photos/burger.svg);
-    transition-duration: 0.3s;
+    transition: background-image 0.3s;
 
     &:hover {
       background-image: url(../images/photos/burger-hover.svg);

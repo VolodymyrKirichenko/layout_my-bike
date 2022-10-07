@@ -8,7 +8,6 @@
   &__container {
     max-width: 1260px;
     width: 100%;
-
     height: 100vh;
 
     margin: 0 auto;
@@ -37,7 +36,6 @@
 
   &__list {
     max-width: 1020px;
-
     margin-bottom: 40px;
     padding: 0;
 
@@ -57,18 +55,19 @@
     font-size: 22px;
     line-height: 22px;
 
-    letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    transition-duration: 0.3s;
 
+    letter-spacing: 2px;
     color: $color-dark-black;
+
+    transition-duration: 0.3s;
 
     @include onDesktop {
       font-weight: 700;
     }
 
-    @include link-after-hover($color-black);
+    @include line-after-hover($color-black);
 
   }
 
@@ -76,7 +75,6 @@
     display: block;
 
     width: max-content;
-
     margin-bottom: 16px;
 
     font-weight: 600;
@@ -91,8 +89,7 @@
       font-weight: 700;
     }
 
-    @include link-after-hover($color-black);
-
+    @include line-after-hover($color-black);
   }
 
   &__click {
