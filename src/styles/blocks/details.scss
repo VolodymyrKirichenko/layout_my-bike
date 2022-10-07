@@ -1,0 +1,20 @@
+.details {
+  &__title {
+    @extend %t-poppins-32-medium;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    letter-spacing: $spacing;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 100%;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+      line-height: 100%;
+    }
+  }
+}
