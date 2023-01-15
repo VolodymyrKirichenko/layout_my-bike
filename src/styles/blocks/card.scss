@@ -12,12 +12,13 @@
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: $color-dark-black;
-  box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+  box-shadow: 0 0 8px rgba(232, 232, 240, 0.4);
 
   transition: transform 0.3s;
 
   &:hover {
     transform: scale(1.1);
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
   }
 
   @include onTablet {

@@ -90,13 +90,10 @@
   &__title {
     margin: 0 auto;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
-
     letter-spacing: $spacing;
 
-    color: $color-white;
+    overflow: hidden;
+    white-space: nowrap;
 
     @include onTablet {
       font-size: 64px;
@@ -104,6 +101,22 @@
 
     @include onDesktop {
       font-size: 80px;
+
+      animation: action 3s normal;
+
+      @keyframes action {
+        from {
+          color: transparent;
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        to {
+          color: $color-white;
+          font-weight: 700;
+          font-size: 80px;
+        }
+      }
     }
   }
 }
