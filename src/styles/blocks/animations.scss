@@ -3,13 +3,12 @@
   animation: ani 1s forwards;
 }
 
-
 @keyframes ani {
   0% {
     opacity: 25%;
   }
 
-  25% {
+  50% {
     opacity: 50%;
   }
 
