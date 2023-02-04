@@ -28,25 +28,3 @@ function handler(event) {
 }
 
 form.addEventListener('submit', handler);
-
-window.addEventListener('scroll', () => {
-  const scrollDistance = window.scrollY;
-  let isReady = false;
-
-  document.querySelectorAll('.page__section').forEach((el, i) => {
-    if (el.offsetTop - document.querySelector('.page__section')
-      .clientHeight <= scrollDistance) {
-      document.querySelectorAll('.page__main .container').forEach((eli) => {
-        if (eli.classList.contains('animation')) {
-          eli.classList.remove('animation');
-          isReady = false;
-        }
-      });
-
-      if (!isReady) {
-        document.querySelectorAll('.page__section')[i]
-          .querySelector('div.container').classList.add('animation');
-      }
-    }
-  });
-});

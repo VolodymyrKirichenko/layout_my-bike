@@ -101,22 +101,6 @@
 
     @include onDesktop {
       font-size: 80px;
-
-      animation: action 3s normal;
-
-      @keyframes action {
-        from {
-          color: transparent;
-          font-weight: 700;
-          font-size: 18px;
-        }
-
-        to {
-          color: $color-white;
-          font-weight: 700;
-          font-size: 80px;
-        }
-      }
     }
   }
 }
