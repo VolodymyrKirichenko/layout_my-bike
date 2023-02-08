@@ -1,6 +1,39 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin onDesktop {
+  @media (min-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 744px) {
+    @content;
+  }
+}
+
+@mixin line-after-hover($color) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+
+    content: "";
+
+    display: block;
+
+    height: 2px;
+
+    border-radius: 8px;
+    background-color: #{$color};
+
+    transition: transform 0.3s;
+    transform: scale(0);
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    transform: scale(1);
   }
 }

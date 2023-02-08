@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 120px;
+  width: 278px;
+  height: 56px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: $color-dark-black;
+
+  background: $color-white;
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+  }
+
+  &:active {
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
+  }
+
+  @include onTablet {
+    width: 392px;
+  }
+
+  @include onDesktop {
+    width: 324px;
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+
+  height: 38px;
+  width: 130px;
+
+  background-image: url(../images/photos/logo-white.svg);
+  background-size: cover;
+  background-position: center;
+
+  &__black {
+    background-image: url(../images/photos/logo-black.svg);
+  }
+}
